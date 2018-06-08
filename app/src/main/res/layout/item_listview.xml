@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="66dp"
+        android:src="@drawable/app_info_icon"
+        android:id="@+id/app_icon"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="版本："
+        android:textSize="18sp"
+        android:layout_below="@+id/app_name"
+        android:layout_alignStart="@+id/app_name"
+        android:id="@+id/app_version"/>
+
+    <TextView
+        android:text="APP："
+        android:textSize="22sp"
+        android:textColor="#474746"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:id="@+id/app_name"
+        android:layout_alignTop="@+id/app_icon"
+        android:layout_toEndOf="@+id/app_icon"/>
+
+    <TextView
+        android:text="版本状态："
+        android:textSize="14dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_version"
+        android:layout_alignStart="@+id/app_version"
+        android:id="@+id/app_status"/>
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/checkbuton_no"
+        android:layout_margin="10dp"
+        android:id="@+id/imageButton"
+        android:layout_alignTop="@+id/app_name"
+        android:layout_alignParentEnd="true"/>
+
+
+</RelativeLayout>
